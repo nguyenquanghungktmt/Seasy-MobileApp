@@ -13,7 +13,7 @@
         android:id="@+id/text_top"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#46B4FE"
+        android:background="@color/default_color_2"
         android:gravity="center"
         android:text="Scan the product's QR code"
         android:textColor="@color/white"

@@ -14,7 +14,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BigFive">
-        <activity android:name=".QRCodeScanner"></activity>
+        <activity android:name=".ProductDetail"></activity>
+        <activity
+            android:name=".MyQRCode"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUsDetail"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QRCodeScanner" />
         <activity
             android:name=".ForgotPasswordActivity"
             android:screenOrientation="portrait" />
@@ -23,6 +40,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
+            android:parentActivityName=".LoginActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"

@@ -24,4 +24,14 @@
     <string name="txt_help">Hướng dẫn</string>
     <string name="txt_user_name">Nguyễn Quang Hưng</string>
     <string name="user_phone_number">0949076952</string>
+    <string name="txt_coin">Điểm tích lũy</string>
+    <string name="txt_my_qr">QR của tôi</string>
+    <string name="txt_feedback">Phản ánh</string>
+    <string name="txt_mobile_money">Liên kết ví điện tử</string>
+    <string name="txt_setting">Cài đặt</string>
+    <string name="txt_about_us">Thông tin ứng dụng</string>
+    <string name="txt_logout">Đăng xuất</string>
+    <string name="description_about_us">
+        Chúng tôi là team Big Five, đội ngũ phát triển phần mềm với mong muốn có thể giảm thiểu được rác thải biến. Hãy sử dụng app và cùng chung ta bảo vệ môi trường biển nhé !! \nhttps:\\\\sinno.soict.ai\\bigfive
+    </string>
 </resources>
