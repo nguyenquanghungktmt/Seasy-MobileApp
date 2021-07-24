@@ -22,4 +22,6 @@
     <string name="txt_exchange">Đổi điểm</string>
     <string name="txt_location">Vị trí</string>
     <string name="txt_help">Hướng dẫn</string>
+    <string name="txt_user_name">Nguyễn Quang Hưng</string>
+    <string name="user_phone_number">0949076952</string>
 </resources>

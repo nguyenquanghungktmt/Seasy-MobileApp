@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -21,7 +22,7 @@ public class ScanFragment extends Fragment {
 
     Context context;
 
-    Button mScanNow;
+    CardView mScanNow, mSelectPhoto;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,7 +41,7 @@ public class ScanFragment extends Fragment {
         context = view.getContext();
 
         // handle onclick event
-        mScanNow = view.findViewById(R.id.btn_scan_now);
+        mScanNow = view.findViewById(R.id.view_scan_now);
         mScanNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,11 +49,24 @@ public class ScanFragment extends Fragment {
             }
         });
 
+        // handle onclick event
+        mSelectPhoto = view.findViewById(R.id.view_select_photo);
+        mSelectPhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onClickSelecPhoto();
+            }
+        });
+
         return view;
     }
 
+    private void onClickSelecPhoto() {
+        Toast.makeText(context, "Select photo from gallery", Toast.LENGTH_SHORT).show();
+    }
+
     private void onClickScanNow() {
-        Toast.makeText(context, "Scan Now", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(context, "Scan Now", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(context, QRCodeScanner.class);
         context.startActivity(intent);
     }

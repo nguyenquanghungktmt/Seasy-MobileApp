@@ -1,18 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/img_background_user_2"
     android:gravity="center_horizontal"
-    android:padding="16dp"
     tools:context=".ScanFragment">
 
-    <Button
-        android:id="@+id/btn_scan_now"
-        android:layout_width="wrap_content"
+
+    <TextView
+        android:id="@+id/text_top"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#46B4FE"
+        android:gravity="center"
+        android:text="Scan the product's QR code"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_scan_now"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="32dp"
-        android:text="Scan Now"/>
+        android:layout_below="@+id/text_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/btn_scan_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#46B4FE"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Scan Now"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_scan_now"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/btn_select_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#46B4FE"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_select_images"
+            android:padding="16dp"
+            android:text="Select photo from gallery"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
