@@ -49,14 +49,14 @@ public class ScanFragment extends Fragment {
             }
         });
 
-        // handle onclick event
-        mSelectPhoto = view.findViewById(R.id.view_select_photo);
-        mSelectPhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onClickSelecPhoto();
-            }
-        });
+//        // handle onclick event
+//        mSelectPhoto = view.findViewById(R.id.view_select_photo);
+//        mSelectPhoto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onClickSelecPhoto();
+//            }
+//        });
 
         return view;
     }
